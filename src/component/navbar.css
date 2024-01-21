@@ -1,0 +1,54 @@
+.navbar{
+    height: auto;
+    width: 100%;
+    background-color: black;
+}
+.navart{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+input{
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    outline: none;
+    border: none;
+    /* background: transparent; */
+    /* border-bottom: 3px solid red; */
+    color: white;
+}
+.Artbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.navbtn{
+    padding: 10px;
+    transition: background 0.5s ease-in-out
+}
+.navbtn:hover{
+    transition: all 1s ease-in;
+    background: white;
+    color: red;
+}
+@media screen and (max-width: 600px) {
+    .navart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width:100% ;
+        margin-bottom: 10px;
+    }
+    .Artbtn{
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
